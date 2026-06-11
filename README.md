@@ -1,5 +1,6 @@
 # Blood Cell Image Classification with KNN and Handcrafted Features
-<img width="396" height="277" alt="img" src="https://github.com/user-attachments/assets/e1cd7f39-e817-410c-b838-23c0dcc0387a" />
+
+<img width="747" height="353" alt="im2" src="https://github.com/user-attachments/assets/db397a00-09a4-4906-a3e8-a76f2610082f" />
 
 
 ## Project overview
@@ -9,6 +10,7 @@ This project classifies blood cell images into four classes using classical imag
 The project avoids deep learning and focuses on interpretable computer-vision features such as color histograms, grayscale histograms, texture descriptors, edge descriptors, frequency-domain descriptors, and morphology-based descriptors.
 
 ## Dataset
+<img width="396" height="277" alt="img" src="https://github.com/user-attachments/assets/e1cd7f39-e817-410c-b838-23c0dcc0387a" />
 
 The dataset used in this project is the Kaggle Blood Cells dataset listed in [`dataset_link.txt`](dataset_link.txt):
 
