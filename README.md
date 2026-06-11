@@ -5,9 +5,9 @@
 
 ## Project overview
 
-This project classifies blood cell images into four classes using classical image-processing features and a K-Nearest Neighbors classifier. The main goal is to compare several handcrafted feature pipelines, evaluate their performance, and study how robust the best pipeline is under image noise, brightness changes, and different training-set sizes.
+This project classifies blood cell images into four classes using classical image-processing features and a K-Nearest Neighbors classifier. The main goal is to compare several handcrafted feature pipelines, evaluate their performance and study how robust the best pipeline is under image noise, brightness changes and different training-set sizes.
 
-The project avoids deep learning and focuses on interpretable computer-vision features such as color histograms, grayscale histograms, texture descriptors, edge descriptors, frequency-domain descriptors, and morphology-based descriptors.
+The project avoids deep learning and focuses on interpretable computer-vision features such as color histograms, grayscale histograms, texture descriptors, edge descriptors, frequency-domain descriptors and morphology-based descriptors.
 
 ## Dataset
 <img width="396" height="277" alt="img" src="https://github.com/user-attachments/assets/e1cd7f39-e817-410c-b838-23c0dcc0387a" />
@@ -211,70 +211,12 @@ The feature pipelines are defined in `src/pipelines.py`.
 | `Morphology_GrayHist` | Morphological shape features with grayscale histogram |
 | `Combo_BestGuess` | Combined grayscale histogram, LBP, Sobel, and FFT radial features |
 
-## Files to upload to GitHub
 
-Upload these files and folders:
 
-```text
-README.md
-requirements.txt
-.gitignore
-dataset_link.txt
-src/
-notebooks/
-experiments/results/
-reports/figures/
-reports/tables/
-```
 
-Do **not** upload these large or machine-specific files/folders:
 
-```text
-data/raw/
-data/interim/
-data/processed/features/
-data/processed/images/
-.ipynb_checkpoints/
-__pycache__/
-.venv/
-*.npz
-*.npy
-*.pkl
-```
 
-The repository should contain the code, notebooks, saved result CSV files, and selected figures. The raw dataset and generated feature arrays should be recreated locally by following the setup steps.
 
-## Recommended visuals for the README
 
-This README already includes the saved validation-accuracy figure:
 
-```markdown
-![Best validation accuracy per pipeline](reports/figures/best_validation_accuracy_per_pipeline.png)
-```
 
-Good additional visuals to save into `reports/figures/` and add later:
-
-- Sample images from each blood-cell class
-- Confusion matrix for the best model
-- PCA or t-SNE plot of the best feature pipeline
-- Accuracy vs. `k` line plot
-- Robustness plots for Gaussian noise, salt-and-pepper noise, and brightness changes
-- Training-size sensitivity curve
-
-## Important note for portability
-
-The GitHub-ready version of `src/config.py` should avoid hard-coded local paths such as:
-
-```python
-PROJECT_ROOT = r"C:\Users\Arafat\Desktop\IMA Project"
-```
-
-Instead, use a dynamic project root based on the location of `config.py`, so the project works after cloning on another computer.
-
-## Author
-
-Arafat Islam
-
-## License
-
-No license has been selected yet. If this is a public academic/project portfolio repository, consider adding an MIT License or another open-source license that matches how you want others to use the code.
