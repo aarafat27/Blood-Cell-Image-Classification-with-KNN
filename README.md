@@ -2,17 +2,6 @@
 <img width="396" height="277" alt="img" src="https://github.com/user-attachments/assets/e1cd7f39-e817-410c-b838-23c0dcc0387a" />
 
 
-
-## Repository information
-
-**Suggested repository name:** `blood-cell-knn-classification`
-
-Other good alternatives:
-
-- `blood-cell-image-classification-knn`
-- `handcrafted-features-knn-blood-cells`
-- `blood-cell-classification-handcrafted-features`
-
 ## Project overview
 
 This project classifies blood cell images into four classes using classical image-processing features and a K-Nearest Neighbors classifier. The main goal is to compare several handcrafted feature pipelines, evaluate their performance, and study how robust the best pipeline is under image noise, brightness changes, and different training-set sizes.
