@@ -56,6 +56,20 @@ The raw image dataset is not included in this repository because it is large. Do
 - Training-size sensitivity analysis
 - PCA and t-SNE visualization notebooks
 
+## Feature pipelines
+
+The feature pipelines are defined in `src/pipelines.py`.
+
+| Pipeline | Description |
+|---|---|
+| `RawPixels` | Raw grayscale pixel values |
+| `GrayHist` | Grayscale intensity histogram |
+| `ColorHists` | RGB and HSV color histograms |
+| `Texture_LBP_GLCM` | Texture features from LBP and GLCM |
+| `EdgesAndTexture` | Sobel edge histogram with LBP texture |
+| `Frequency_FFT_DCT` | FFT radial energy and DCT low-frequency block |
+| `Morphology_GrayHist` | Morphological shape features with grayscale histogram |
+| `Combo_BestGuess` | Combined grayscale histogram, LBP, Sobel, and FFT radial features |
 ## Results summary
 
 The best validation result came from the **ColorHists** pipeline using **k = 1**.
@@ -195,21 +209,6 @@ The most important notebooks for reproducing the final results are:
 - `knn_advanced_experiments.ipynb`
 - `robustness_and_sensitivity_analysis.ipynb`
 - `results_and_figures.ipynb`
-
-## Feature pipelines
-
-The feature pipelines are defined in `src/pipelines.py`.
-
-| Pipeline | Description |
-|---|---|
-| `RawPixels` | Raw grayscale pixel values |
-| `GrayHist` | Grayscale intensity histogram |
-| `ColorHists` | RGB and HSV color histograms |
-| `Texture_LBP_GLCM` | Texture features from LBP and GLCM |
-| `EdgesAndTexture` | Sobel edge histogram with LBP texture |
-| `Frequency_FFT_DCT` | FFT radial energy and DCT low-frequency block |
-| `Morphology_GrayHist` | Morphological shape features with grayscale histogram |
-| `Combo_BestGuess` | Combined grayscale histogram, LBP, Sobel, and FFT radial features |
 
 
 ## Presentation
