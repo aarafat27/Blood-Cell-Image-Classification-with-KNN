@@ -212,7 +212,11 @@ The feature pipelines are defined in `src/pipelines.py`.
 | `Combo_BestGuess` | Combined grayscale histogram, LBP, Sobel, and FFT radial features |
 
 
+## Presentation
 
+The project presentation slides are available here:
+
+[View presentation slides](blood-cell-knn-classification-presentation.pdf)
 
 
 
