@@ -1,6 +1,7 @@
 # Blood Cell Image Classification with KNN and Handcrafted Features
+<img width="396" height="277" alt="img" src="https://github.com/user-attachments/assets/e1cd7f39-e817-410c-b838-23c0dcc0387a" />
 
-![Best validation accuracy per pipeline](reports/figures/best_validation_accuracy_per_pipeline.png)
+
 
 ## Repository information
 
@@ -89,6 +90,8 @@ When the best validation configuration was evaluated on the test set, it achieve
 | Macro F1 | 0.9699 |
 
 The experiments also showed that the color-histogram KNN model performs well on clean data, but its accuracy drops significantly under strong artificial noise and brightness changes. This suggests that the model is effective for clean blood-cell images but not fully robust to image corruption or acquisition changes.
+
+![Best validation accuracy per pipeline](reports/figures/best_validation_accuracy_per_pipeline.png)
 
 ## Project structure
 
